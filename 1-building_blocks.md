@@ -11,7 +11,7 @@ print greeting
 ```
 But there's an important note here: what is this mysterious `greeting`, and how is it stored?
 
-# Global Scope
+## Global Scope
 To find out, we run the `globals()` function, and look at what it returns.
 
 You'll see a dict (that's a hash map for those of you new to python), with a bunch of keys.
@@ -32,7 +32,7 @@ and sure enough, it will print "Goodbye World".
 This globals() dict, in a very real way, is the entire collection of global variables
 present in this module. Wait, module? Well, let me go off on a slight tangent.
 
-# Modules
+## Modules
 If you've done some basic python, you'll have seen things like import statements.
 You might have even written some of your own code in one file, and imported it for use in another.
 
@@ -45,7 +45,7 @@ attributes of them (eg. `sys.stdin`), you're actually accessing the module's glo
 > But wait, what about all those functions and classes I define? Where do they go?
 Good question. The trick to realise there is...
 
-# Everything is an assignment
+## Everything is an assignment
 Consider the following snippets:
 ```python
 import sys
