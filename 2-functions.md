@@ -86,6 +86,10 @@ Note that in python2, it is a syntax error to put any further args (with one exc
 after the `*args` in the argument list.
 In python3, you may put arguments with defaults after the `*args`, which are "keyword-only arguments".
 
+Note also that, especially for those coming from C, it may be tempting to think of the `*` as indicating
+a pointer to an array or similar - the answer is no, there is zero extra meaning here. The `*` is a
+syntactic primitive that indicates variadic args, nothing more.
+
 ### More keyword arguments
 
 The `*args` construct captures all positional arguments, but not keyword arguments.
