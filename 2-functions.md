@@ -80,7 +80,7 @@ def add(x, y, *numbers):
 ```
 You'll often see these called "positional args", "\*args", or "variadic args".
 While it's a common convention to name the argument `*args`,
-you should pick a more descriptive name if possible.
+you should pick a more descriptive name if possible. It's the `*` which makes it special, not the exact name.
 
 Note that in python2, it is a syntax error to put any further args (with one exception, see below)
 after the `*args` in the argument list.
