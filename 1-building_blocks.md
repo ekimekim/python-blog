@@ -62,7 +62,7 @@ class Foobar(object):
 They all have something in common - they add something to the local scope.
 What I mean is, after you `import sys`, you can access the `sys` module.
 And this works just like the `greeting` example above:
-```python
+```pycon
 >>> import sys
 >>> globals()["sys"] is sys
 True

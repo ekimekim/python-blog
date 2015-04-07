@@ -17,7 +17,7 @@ def add(x, y):
 	return x + y
 ```
 then you can call it with the same number of arguments:
-```python
+```pycon
 >>> add(2, 3)
 5
 ```
@@ -28,7 +28,7 @@ So far, so good, right?
 
 Now, depending on how much python you've done, you might know about some more advanced forms,
 such as optional arguments. Suppose we want to add an optional third argument to our add function:
-```python
+```pycon
 >>> def add(x, y, z=0):
 ... 	return x + y + z
 ... 
@@ -44,20 +44,20 @@ We've added an argument `z` which takes a default value of `0`.
 Note that we can refer to z either by position (as the third positional arg) or by name (with `z=4`).
 
 As a matter of fact, we can do this regardless of whether the argument is optional or not:
-```python
+```pycon
 >>> add(x=1, y=2)
 3
 >>> add(3, y=1, z=1)
 5
 ```
 Note that once we start giving keyword args, we can't give any further positional args:
-```python
+```pycon
 >>> add(x=3, 1, 1)
   File "<stdin>", line 1
 SyntaxError: non-keyword arg after keyword arg
 ```
 And we can't give the same argument in two ways:
-```python
+```pycon
 >>> add(2, 3, y=1)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -92,7 +92,7 @@ The `*args` construct captures all positional arguments, but not keyword argumen
 There is an equivilent construct for keyword arguments, often called `**kwargs`. Though as with `*args`
 you may use any argument name, it must be prefixed with `**` to indicate it should capture all remaining
 keyword arguments. These arguments are put into a dict, which maps the keyword to the value, for example:
-```python
+```pycon
 >>> def thing_with_options(required_arg, optional_arg='not given', **extras):
 ... 	print "first arg:", required_arg
 ... 	print "second arg:", optional_arg
