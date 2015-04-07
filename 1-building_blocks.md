@@ -43,6 +43,7 @@ These modules are, in fact, objects (more on that later) and when you access
 attributes of them (eg. `sys.stdin`), you're actually accessing the module's global scope.
 
 > But wait, what about all those functions and classes I define? Where do they go?
+
 Good question. The trick to realise there is...
 
 ## Everything is an assignment
